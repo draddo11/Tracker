@@ -1,2 +1,2 @@
 # Tracker
-a vue/nuxt project
+a vue/nuxt blog demo 
