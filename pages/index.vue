@@ -1,12 +1,21 @@
 <template>
   <div class="page-wrapper">
     <div class="article-cards-wrapper">
-      <article-card-block
+      <!-- <article-card-block
         v-for="(article, i) in articles"
         :key="article.id"
         :article="article"
         class="article-card-block"
-      />
+      /> -->
+      <article-card-block
+  v-for="(article, i) in articles"
+  :key="article.id"
+  v-observe-visibility="
+    i === articles.length - 1 ? lazyLoadArticles : false
+  "
+  :article="article"
+  class="article-card-block"
+/>
     </div>
   </div>
 </template>
