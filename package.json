@@ -11,7 +11,9 @@
   "dependencies": {
     "@nuxtjs/style-resources": "^1.2.1",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "vue-content-placeholders": "^0.2.1",
+    "vue-observe-visibility": "^1.0.0"
   },
   "devDependencies": {
     "@nuxtjs/svg": "^0.3.0",
