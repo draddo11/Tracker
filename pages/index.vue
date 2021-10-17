@@ -39,6 +39,13 @@
       ).then(res => res.json())
 
       this.articles = this.articles.concat(articles)
+    },lazyLoadArticles(isVisible) {
+  if (isVisible) {
+    if (this.currentPage < 5) {
+      this.currentPage++
+      this.$fetch()
     }
+  }
+}
   }
 </script>
